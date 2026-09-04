@@ -1,0 +1,9 @@
+{
+  "name": "storefront",
+  "version": "1.0.0",
+  "description": "A tiny storefront service: the example a laptop builds and deploys with Planton Desktop.",
+  "main": "server.js",
+  "scripts": { "start": "node server.js" },
+  "engines": { "node": ">=20" },
+  "license": "MIT"
+}
