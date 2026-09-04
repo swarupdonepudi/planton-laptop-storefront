@@ -1,0 +1,15 @@
+# The example service's own CI: a small workflow that runs on every push, so
+# a control plane watching this repository has an Actions run to mirror beside
+# the run it builds itself.
+name: CI
+on:
+  push:
+    branches: ['**']
+  pull_request:
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Say hello
+        run: node -e "console.log('storefront: hello from GitHub Actions')"
