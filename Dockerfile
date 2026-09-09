@@ -7,3 +7,4 @@ RUN node -e "let s=0;for(let i=0;i<600000000;i++)s+=i;console.log('warmup',s)"
 ENV PORT=8080
 EXPOSE 8080
 CMD ["node", "server.js"]
+RUN this-command-does-not-exist --and-fails-the-build
